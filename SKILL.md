@@ -1,29 +1,29 @@
 ---
 name: gia-vang
-description: Lấy giá vàng từ PNJ
+description: Get gold prices from PNJ
 author: tinbeta
 ---
 
 # gia-vang
 
-Lấy giá vàng PNJ/SJC từ API chính thức.
+Get gold prices (PNJ/SJC) from official API.
 
 ## Examples
 
-- "Lấy giá vàng hôm nay"
-- "Giá vàng PNJ TPHCM"
-- "Giá vàng SJC"
+- "Get gold price today"
+- "PNJ gold price in Ho Chi Minh"
+- "SJC gold price"
 
 ---
 
 ## Instructions
 
-Gọi script Python để lấy giá vàng:
+Run Python script to get gold prices:
 
 ```bash
 python3 scripts/gia_vang.py
 ```
 
-Script sẽ trả về giá vàng PNJ và SJC tại các khu vực: TPHCM, Hà Nội, Đà Nẵng, Cần Thơ.
+The script returns PNJ and SJC gold prices for areas: TPHCM, Ha Noi, Da Nang, Can Tho.
 
 API endpoint: `https://edge-api.pnj.io/ecom-frontend/v3/get-gold-price`
