@@ -14,6 +14,8 @@ Lấy giá vàng PNJ/SJC từ API chính thức.
 - "Giá vàng PNJ TPHCM"
 - "Giá vàng SJC"
 
+---
+
 ## Instructions
 
 Gọi script Python để lấy giá vàng:
