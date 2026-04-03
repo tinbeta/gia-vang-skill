@@ -1,7 +1,7 @@
 ---
 name: gia-vang
 description: Lấy giá vàng từ PNJ
-version: 1.0.0
+author: tinbeta
 ---
 
 # gia-vang
