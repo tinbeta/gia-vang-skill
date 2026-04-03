@@ -1,3 +1,9 @@
+---
+name: gia-vang
+description: Lấy giá vàng từ PNJ
+version: 1.0.0
+---
+
 # gia-vang
 
 Lấy giá vàng PNJ/SJC từ API chính thức.
