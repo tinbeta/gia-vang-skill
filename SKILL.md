@@ -1,7 +1,9 @@
 ---
 name: gia-vang
 description: Lấy giá vàng từ PNJ
-homepage: https://github.com/openclaw/gia-vang
+homepage: https://github.com/tinbeta/gia-vang-skill
+author: tinbeta
+version: 1.0.0
 metadata:
   openclaw:
     emoji: 🥇
@@ -15,9 +17,7 @@ Lấy giá vàng PNJ/SJC từ API chính thức.
 
 ## Cài đặt
 
-```bash
-# Không cần cài đặt thêm, dùng Python có sẵn
-```
+Không cần cài đặt thêm, dùng Python có sẵn.
 
 ## Sử dụng
 
