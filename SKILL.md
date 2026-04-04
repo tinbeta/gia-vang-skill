@@ -2,7 +2,7 @@
 name: gia-vang
 description: Get current gold prices from PNJ (Phu Nhuan Jewelry) - Vietnam's leading gold retailer. Returns buy/sell prices for PNJ and SJC gold across major cities.
 metadata:
-  homepage: https://github.com/tinbeta/gia-vang-skill
+  homepage: https://github.com/tinbeta/gia-vang-skill/tree/main
   author: tinbeta
 ---
 
