@@ -9,6 +9,7 @@ Một skill/API nhỏ gọn dùng để lấy giá vàng từ PNJ (Phú Nhuận 
 - Lấy giá vàng PNJ theo thời gian thực
 - Tích hợp đơn giản, nhẹ và dễ mở rộng
 - Phù hợp cho AI Agents, automation và dashboard
+- Hỗ trợ ví dụ bằng Python, Node.js và Rust
 - Có thể mở rộng thêm nhiều nguồn giá vàng khác tại Việt Nam
 - Phát hành theo giấy phép MIT
 
@@ -33,6 +34,11 @@ Gia Vàng Skill có thể dùng cho:
 .
 ├── assets/
 │   └── banner.svg
+├── examples/
+│   ├── nodejs/
+│   │   └── pnj_price.js
+│   └── rust/
+│       └── main.rs
 ├── README.md
 └── src/
 ```
@@ -48,17 +54,39 @@ git clone https://github.com/tinbeta/gia-vang-skill.git
 cd gia-vang-skill
 ```
 
-### Cài đặt dependencies
+---
+
+# 🟨 Node.js Example
+
+### Cài dependencies
 
 ```bash
-# Ví dụ
-pip install -r requirements.txt
+npm install axios cheerio
 ```
 
-### Chạy dự án
+### Chạy
 
 ```bash
-python main.py
+node examples/nodejs/pnj_price.js
+```
+
+---
+
+# 🦀 Rust Example
+
+### Cargo.toml
+
+```toml
+[dependencies]
+reqwest = { version = "0.12", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+scraper = "0.19"
+```
+
+### Chạy
+
+```bash
+cargo run
 ```
 
 ---
@@ -87,6 +115,7 @@ Các tính năng dự kiến trong tương lai:
 - Biểu đồ lịch sử giá vàng
 - Cập nhật realtime bằng WebSocket
 - Hỗ trợ đa ngôn ngữ
+- SDK đa nền tảng
 
 ---
 
