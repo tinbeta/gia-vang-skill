@@ -1,33 +1,33 @@
-# Gia Vang Skill
+# Gia Vàng Skill
 
-![Gia Vang Skill Banner](assets/banner.svg)
+![Gia Vàng Skill Banner](assets/banner.svg)
 
-A lightweight skill/API integration for retrieving Vietnamese gold prices from PNJ (Phu Nhuan Jewelry) — one of the largest and most trusted gold retailers in Vietnam.
+Một skill/API nhỏ gọn dùng để lấy giá vàng từ PNJ (Phú Nhuận Jewelry) — một trong những thương hiệu vàng lớn và uy tín nhất tại Việt Nam.
 
-## ✨ Features
+## ✨ Tính năng
 
-- Real-time gold price retrieval from PNJ
-- Simple and lightweight integration
-- Designed for AI agents, automation tools, and dashboards
-- Easy to extend for additional Vietnamese gold providers
-- MIT Licensed
-
----
-
-## 📌 Use Cases
-
-Gia Vang Skill can be used for:
-
-- AI assistants that answer gold price queries
-- Financial dashboards
-- Gold price monitoring bots
-- Telegram/Discord automation
-- Market tracking systems
-- Vietnamese fintech applications
+- Lấy giá vàng PNJ theo thời gian thực
+- Tích hợp đơn giản, nhẹ và dễ mở rộng
+- Phù hợp cho AI Agents, automation và dashboard
+- Có thể mở rộng thêm nhiều nguồn giá vàng khác tại Việt Nam
+- Phát hành theo giấy phép MIT
 
 ---
 
-## 🏗 Project Structure
+## 📌 Trường hợp sử dụng
+
+Gia Vàng Skill có thể dùng cho:
+
+- AI Assistant trả lời giá vàng
+- Dashboard tài chính
+- Bot theo dõi giá vàng
+- Automation cho Telegram/Discord
+- Hệ thống theo dõi thị trường
+- Ứng dụng fintech tại Việt Nam
+
+---
+
+## 🏗 Cấu trúc dự án
 
 ```bash
 .
@@ -39,23 +39,23 @@ Gia Vang Skill can be used for:
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Bắt đầu nhanh
 
-### Clone Repository
+### Clone repository
 
 ```bash
 git clone https://github.com/tinbeta/gia-vang-skill.git
 cd gia-vang-skill
 ```
 
-### Install Dependencies
+### Cài đặt dependencies
 
 ```bash
-# Example
+# Ví dụ
 pip install -r requirements.txt
 ```
 
-### Run
+### Chạy dự án
 
 ```bash
 python main.py
@@ -63,7 +63,7 @@ python main.py
 
 ---
 
-## 📊 Example Output
+## 📊 Ví dụ dữ liệu trả về
 
 ```json
 {
@@ -77,27 +77,27 @@ python main.py
 
 ---
 
-## 🔮 Roadmap
+## 🔮 Kế hoạch phát triển
 
-Planned future improvements:
+Các tính năng dự kiến trong tương lai:
 
-- Support SJC gold prices
-- REST API mode
-- Web dashboard
-- Historical price charts
-- WebSocket live updates
-- Multi-language support
-
----
-
-## 🛡 License
-
-This project is licensed under the MIT License.
+- Hỗ trợ giá vàng SJC
+- Chế độ REST API
+- Dashboard web
+- Biểu đồ lịch sử giá vàng
+- Cập nhật realtime bằng WebSocket
+- Hỗ trợ đa ngôn ngữ
 
 ---
 
-## 👨‍💻 Author
+## 🛡 Giấy phép
 
-Created and maintained by Tinbeta.
+Dự án được phát hành theo giấy phép MIT License.
 
-If you find this project useful, consider giving it a ⭐ on GitHub.
+---
+
+## 👨‍💻 Tác giả
+
+Phát triển và duy trì bởi Tinbeta.
+
+Nếu bạn thấy dự án hữu ích, hãy cho repo một ⭐ trên GitHub.
