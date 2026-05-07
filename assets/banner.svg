@@ -1,0 +1,9 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1280" height="640" fill="#0F172A"/>
+<circle cx="1080" cy="120" r="180" fill="#F59E0B" fill-opacity="0.18"/>
+<circle cx="220" cy="520" r="220" fill="#EAB308" fill-opacity="0.12"/>
+<text x="80" y="240" fill="white" font-family="Arial" font-size="72" font-weight="700">Gia Vang Skill</text>
+<text x="82" y="320" fill="#CBD5E1" font-family="Arial" font-size="34">Vietnam Gold Price Intelligence for PNJ</text>
+<rect x="80" y="390" width="360" height="72" rx="16" fill="#F59E0B"/>
+<text x="120" y="437" fill="#111827" font-family="Arial" font-size="32" font-weight="700">Real-time Gold Data</text>
+</svg>
