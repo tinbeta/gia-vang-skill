@@ -7,9 +7,10 @@ Một skill/API nhỏ gọn dùng để lấy giá vàng từ PNJ (Phú Nhuận 
 ## ✨ Tính năng
 
 - Lấy giá vàng PNJ theo thời gian thực
-- Tích hợp đơn giản, nhẹ và dễ mở rộng
-- Phù hợp cho AI Agents, automation và dashboard
-- Hỗ trợ ví dụ bằng Python, Node.js và Rust
+- Dashboard realtime với FastAPI
+- REST API tích hợp sẵn
+- Hỗ trợ Python, Node.js và Rust
+- Phù hợp cho AI Agents, automation và fintech
 - Có thể mở rộng thêm nhiều nguồn giá vàng khác tại Việt Nam
 - Phát hành theo giấy phép MIT
 
@@ -20,7 +21,7 @@ Một skill/API nhỏ gọn dùng để lấy giá vàng từ PNJ (Phú Nhuận 
 Gia Vàng Skill có thể dùng cho:
 
 - AI Assistant trả lời giá vàng
-- Dashboard tài chính
+- Dashboard tài chính realtime
 - Bot theo dõi giá vàng
 - Automation cho Telegram/Discord
 - Hệ thống theo dõi thị trường
@@ -33,48 +34,79 @@ Gia Vàng Skill có thể dùng cho:
 ```bash
 .
 ├── assets/
-│   └── banner.svg
+├── dashboard/
+│   └── app.py
 ├── examples/
 │   ├── nodejs/
-│   │   └── pnj_price.js
 │   └── rust/
-│       └── main.rs
-├── README.md
-└── src/
+├── python/
+│   ├── gia_vang_skill/
+│   └── requirements.txt
+├── .github/workflows/
+├── LICENSE
+└── README.md
 ```
 
 ---
 
-## 🚀 Bắt đầu nhanh
+# 🚀 Chạy Dashboard Realtime
 
-### Clone repository
+### Cài dependencies
 
 ```bash
-git clone https://github.com/tinbeta/gia-vang-skill.git
-cd gia-vang-skill
+pip install -r python/requirements.txt
+```
+
+### Chạy FastAPI dashboard
+
+```bash
+uvicorn dashboard.app:app --reload
+```
+
+### Mở trình duyệt
+
+```text
+http://127.0.0.1:8000
+```
+
+Dashboard sẽ tự động cập nhật giá vàng mỗi 10 giây.
+
+---
+
+# 🔌 REST API
+
+### Lấy dữ liệu giá vàng
+
+```text
+GET /api/prices
+```
+
+Ví dụ dữ liệu:
+
+```json
+[
+  {
+    "provider": "PNJ",
+    "type": "24K",
+    "buy": "11800000",
+    "sell": "12100000",
+    "currency": "VND"
+  }
+]
 ```
 
 ---
 
 # 🟨 Node.js Example
 
-### Cài dependencies
-
 ```bash
 npm install axios cheerio
-```
-
-### Chạy
-
-```bash
 node examples/nodejs/pnj_price.js
 ```
 
 ---
 
 # 🦀 Rust Example
-
-### Cargo.toml
 
 ```toml
 [dependencies]
@@ -83,39 +115,21 @@ tokio = { version = "1", features = ["full"] }
 scraper = "0.19"
 ```
 
-### Chạy
-
 ```bash
 cargo run
 ```
 
 ---
 
-## 📊 Ví dụ dữ liệu trả về
-
-```json
-{
-  "brand": "PNJ",
-  "gold_type": "24K",
-  "buy_price": "11800000",
-  "sell_price": "12100000",
-  "currency": "VND"
-}
-```
-
----
-
 ## 🔮 Kế hoạch phát triển
 
-Các tính năng dự kiến trong tương lai:
-
-- Hỗ trợ giá vàng SJC
-- Chế độ REST API
-- Dashboard web
+- Hỗ trợ giá vàng SJC/DOJI
+- WebSocket realtime
 - Biểu đồ lịch sử giá vàng
-- Cập nhật realtime bằng WebSocket
-- Hỗ trợ đa ngôn ngữ
+- SQLite/PostgreSQL
+- Docker deployment
 - SDK đa nền tảng
+- AI phân tích xu hướng giá vàng
 
 ---
 
@@ -128,5 +142,3 @@ Dự án được phát hành theo giấy phép MIT License.
 ## 👨‍💻 Tác giả
 
 Phát triển và duy trì bởi Tinbeta.
-
-Nếu bạn thấy dự án hữu ích, hãy cho repo một ⭐ trên GitHub.
